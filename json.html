@@ -1,0 +1,42 @@
+
+
+
+<!--%%%%%%%%%%%%%%%  how to accessing json  %%%%%%%%%%%%%% -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h2>my code</h2>
+    <div id="mycode"></div>
+
+    <script>
+        let obj={"name":"shabnam",
+                 "age": 20,
+                 "email": "shabnambegamkhan23@navgurukul.org"
+        }
+         
+        let name=obj.name;
+        let age=obj.age;
+        let email=obj.email
+
+// &&&&&&&&&&&&&&&& you want to print only key  &&&&&&&&&&&&&&&&&&&&&&&&&
+
+        // document.getElementById("mycode").innerHTML="name:" +name+ "<br/>age:" +age+"<br/>email: "+email;
+
+
+// &&&&&&&&&&&&&&&  if you want to print value  using by ( for in loop )  &&&&&&&&&&&&&&&&&&
+
+document.getElementById("mycode").innerHTML = "name:" +name+ "</br>age:" +age+ "</br>email:" +email;
+for (let i in obj){
+    document.getElementById("mycode").innerHTML+= obj[i]+ "</br>";
+    break;
+} 
+
+    </script>
+</body>
+</html>

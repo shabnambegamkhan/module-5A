@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="box" placeholder="write here">
+    <button  onclick="clickme()"> press</button>
+    <div id="result"></div>
+
+    <script>
+
+const url = `https://dummyjson.com/products`;
+
+function clickme(){
+fetch (url)
+.then(response=> response.json())
+.then(data=> console.log(data))
+// .then(data=> {
+    // document.getElementById("result").textContent=result; })
+.catch(error=> console.log(" result not found"));
+// .catch (error=>{
+    // document.getElementById('result').textContent="result not found";})
+}
+    </script>
+</body>
+</html>

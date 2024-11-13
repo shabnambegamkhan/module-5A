@@ -1,0 +1,123 @@
+
+
+<!--########################   ADDING ONCLICK EVENT DYNAMICALLY    ##########################-->
+
+
+<!--/////////// first method//////////// -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONCLICK EVENT</title>
+</head>
+<body>
+    <div id="myContainer"></div>
+    
+    <script>
+  let btn=document.createElement("button")
+  btn.textContent= "HELLO SHABNAM"
+  btn.onclick=function(){
+    console.log("click event triggered")
+  }
+  document.getElementById("myContainer").appendChild(btn)
+    </script>
+</body>
+</html>  -->
+
+
+<!--///////////// second methode /////////////// -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onclick event</title>
+  </head>
+  <body>
+    <input id="name" type="text" name="name" />
+    <button onclick="greet()">Greet</button>
+    <div class="type-msg"></div>
+
+    <script>
+      function greet() {
+        let name = document.getElementById("name").value;
+        let string = "Hello" + " " + name;
+        document.getElementsByClassName("type-msg")[0].innerHTML = string;
+        // document.getElementsByClassName("type-msg")[0].innerHTML="Hello"+ " " + name;
+      }
+    </script>
+  </body>
+</html>  -->
+
+
+
+<!--########################### KEYBOARD EVENTS  ######@@#################### -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="inp" type="text">
+  <script>
+    inp.addEventListener("keypress",(e)=>{
+      console.log("keypress");
+      
+    })
+  </script>
+</body>
+</html> -->
+
+
+
+<!--############### EVENT LISTNER ################## -->
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <button onclick="btn"> click </button>
+   <script> 
+    document.getElementById("btn")
+    document.addEventListener('dblclick', function(){
+      alert("shabnam");
+      document.body.style.backgroundColor="green"
+      
+    })
+   </script>
+</body>
+</html>  -->
+
+
+
+<!-- //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<!--  function callback -->
+
+<script>
+
+
+function add(num1,num2){
+  return (num1+num2)
+}
+let a=10;
+let b=20;
+add(a,b)
+
+</script>

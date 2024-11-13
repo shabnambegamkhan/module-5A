@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY FACE</title>
+</head>
+<body>
+    <div class="image" >
+    <img src="sad1.gif"  id="photo"></div>
+     <!-- <button onclick="tabbuttof()"> click</button> -->
+    <button onclick="tabbutton()"> click</button>
+
+
+    <style>
+
+      body{
+        background-color: rgb(62, 75, 6);
+      }
+
+
+        .image img{
+            height: 300px;
+            width: 250px;
+            border-radius: 10px;
+            border-color: blue;
+            border-style: ridge;
+            border-width: 5px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            justify-content: center;
+            /* padding-left: auto; */
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+        button{
+            background-color: chartreuse;
+            font-size: 20px;
+            height: 30px;
+            width: 60px;
+            border-color: brown;
+            border-width: px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        button:hover{
+            background-color: crimson;
+        }
+    </style>
+
+
+</body>
+
+<script>
+    let n = 0
+    function tabbutton(){
+        const image= document.getElementById("photo")
+        if(n==0){
+
+            image.src="hppy1.gif"
+            n=1
+        }
+        else{
+            image.src="sad1.gif"
+            n=0
+
+        }
+    }
+</script>
+
+</html>

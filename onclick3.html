@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON OFF</title>
+</head>
+
+<body>
+    <div id="background">
+        <div> <img src="bulb.jpeg" class="bulb-image" id="bulbimg"></div>
+        <div> <img src="cat1.jpg" class="cat-image" id="catimg"> </div>
+        <div>
+        <div class="center-item">
+        <div class="switch-board">
+            <h1 id="switch"> main board</h1>
+            <button class="switch-off" onclick="switchoff()">OFF</button>
+            <button class="switch-on" onclick="switchon()">ON</button>
+        </div>
+    </div>
+    </div>
+    </div>
+<style>
+
+body{
+    background-color: rgb(3, 3, 3);
+}
+
+
+#background {
+    display: flex;
+    flex-direction: column;
+     align-items: center; 
+    margin-top: 0px; /* Add some space from the top */
+}
+
+
+.bulb-image{
+    width: 250px;
+    /* height: 50px; */
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+}
+.cat-image{
+    width: 300px;
+    /* height: 50px; */
+    padding-left: 0px;
+    display: flex-;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+
+}
+
+.switch-board{
+    background-color: rgb(165, 240, 37);
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    border-color: aqua;
+    border-width: 5px;
+    border-style: solid;
+    
+}
+
+
+#switch{
+    color:rgb(10, 30, 214);
+    margin-top: auto;
+}
+
+.switch-off{
+    background-color: rgb(226, 43, 43);
+    font-family: bold;
+    color: aliceblue;
+    width: 99px;
+    height: 44px;
+}
+.switch-on{
+    background-color: rgb(41, 165, 10);
+    font-family: bold;
+    color: aliceblue;
+    width: 99px;
+    height: 44px;
+    
+}
+
+.center-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+button:hover{
+    background-color: rgb(4, 4, 15);
+}
+
+
+</style>
+
+<script>
+    const bulbImage=document.getElementById("bulbimg")
+    const catImage=document.getElementById("catimg")
+    function switchoff(){
+        // bulbImage.src ="newbulb.jpg"
+        // catImage.src = "cat2.jpg"
+    }
+    function switchon(){
+        bulbImage.src = "new1.avif"
+        catImage.src = "catnew.webp"
+    }
+</script>
+
+</body>
+
+</html>
